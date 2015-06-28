@@ -1,8 +1,12 @@
 .e-footer
 {
-	color #ddd !important;
 	padding: 120px 0;
-	background: #ffa239;
+	background: #444; 
+}
+
+.e-footer p
+{
+	color: #ffffff;
 }
 
 .e-article p
