@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>JUG.SEV</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/uikit.min.js"></script>
+    <script type="text/javascript" src="js/lazyYT.js"></script>
+
+    <link rel="stylesheet" href="css/uikit.d.min.css" />
+    <link rel="stylesheet" href="css/lazyYT.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $('.lazyYT').lazyYT();
+        });
+        
+    </script>
+</style>
+</head>
+
+<body>
+
+    <div id="offcanvas" class="uk-offcanvas" aria-hidden="false">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-show">
+            <ul class="uk-nav uk-nav-offcanvas">
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="callforpapers.html">Доклады</a>
+                </li>
+                <li class="uk-active">
+                    <a href="events.html">Встречи</a>
+                </li>
+                <li>
+                    <a href="sponsors.html">Партнеры</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="uk-navbar uk-margin-large-bottom">
+        <a class="uk-navbar-brand uk-hidden-small" href="." title="На главную">
+            <img style="height:40px;" src="img/logo.gif" alt="jug.sev">
+        </a>
+        <ul class="uk-navbar-nav uk-hidden-small">
+            <li>
+                <a href="index.html">Главная</a>
+            </li>
+            <li>
+                <a href="callforpapers.html">Доклады</a>
+            </li>
+            <li class="uk-active">
+                <a href="events.html">Встречи</a>
+            </li>
+            <li>
+                <a href="sponsors.html">Партнеры</a>
+            </li>
+        </ul>
+        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+        <div class="uk-navbar-brand uk-navbar-center uk-visible-small">JUG.SEV</div>
+    </nav>
+    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+        <div class="uk-grid" data-uk-grid-margin="">
+            <div class="uk-width-medium-1-1 uk-text-large">
+                <h1>Прошедшие встречи</h1>
+                <ul>
+                    <li><a href="#first">Первая встреча (15.11.2014)</a></li>
+                    <li><a href="#second">Вторая встреча (14.03.2015)</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="uk-grid-divider">
+        <div class="uk-grid" data-uk-grid-margin="" id="second">
+            <div class="uk-width-1-1 e-article uk-text-large">
+                <h1>Вторая встреча</h1>
+                <p class="uk-text-justify">Вторая  встреча JUG.SEV прошла 14 марта 2015, в центре технологического предпринимательства "Слобода" (ул. Героев Сталинграда 49 А).</p>
+                <h2>Доклады</h2>
+                <ul>
+                    <li><a href="#ivanov">Владимир Иванов. Динамическая (JIT) компиляция в JVM</a></li>
+                    <li><a href="#medvedev">Фёдор Медведев. Не оказывайте сопротивления. Аналитики - ваши друзья!</a></li>
+                    <li><a href="#korob">Алексей Коробейников. Инструменты работы с многопоточностью в Java</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="uk-grid" data-uk-grid-margin="" id="ivanov">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/ivanov.jpg"/>
+            </div>
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>Динамическая (JIT) компиляция в JVM</h2>
+                <div class="uk-article-meta">Владимир Иванов из Oracle</div>
+                <p class="uk-text-justify">Владимир Иванов — ведущий инженер Oracle, работает в группе разработки виртуальной Java-машины HotSpot. Специализируется на JIT-компиляции и поддержке альтернативных языков на платформе Java. Владимир пришел в Sun Microsystems (приобретена Oracle) в 2005 году и с того момента поучаствовал в большом количестве проектов, связанных с Java (HotSpot JVM, RTSJ, JavaFX).</p>
+
+                <p class="uk-text-justify">Java абстрагирует большое количество технических деталей о платформе, на которой исполняется Java-приложение. Java-платформа активно использует динамическую компиляцию в виртуальной Java-машине (JVM). Динамическая (Just-In-Time) компиляция повышает производительность за счет трансляции Java байткода в машинный код в процессе работы приложения. Принцип работы существенно отличается от статических компиляторов и для получения высокопроизводительного кода JVM использует другой набор методик компиляции. В докладе будут описаны общие принципы динамической компиляции и ее особенности в применении к Java. Обзор JIT-компиляторов в HotSpot JVM будет включать рассмотрение инструментов и методик анализа их работы (от высокоуровневых решений и до машинного кода) и диагностирования проблем.</p>
+                <div class="lazyYT" data-youtube-id="Y86KRUhPSfY">Видео доклада</div>
+            </div>
+        </div>
+        <hr class="uk-grid-divider">
+        <div class="uk-grid" data-uk-grid-margin="" id="medvedev">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/medvedev.jpg"/>
+            </div>
+
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>Не оказывайте сопротивления. Аналитики - ваши друзья!</h2>
+                <div class="uk-article-meta">Фёдор Медведев из Naumen</div>
+                <p class="uk-text-justify"> Поговорим о взаимодействии разработчиков с аналитиками и менеджерами. О том, как сделать взаимодействие продуктивным, как разделить полномочия и ответственность, как конструктивно разрешать конфликты к обоюдному удовлетворению и пользе для заказчика, о том, как правильно задавать вопросы и отвечать на них.</p>
+                <div class="lazyYT" data-youtube-id="XtJqOKZE14k">Видео доклада</div>
+            </div>
+        </div>
+        <hr class="uk-grid-divider">
+        <div class="uk-grid" data-uk-grid-margin="" id="korob">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/korob.jpg"/>
+            </div>
+
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>Инструменты работы с многопоточностью в Java</h2>
+                <div class="uk-article-meta">Алексей Коробейников из Naumen</div>
+                <p class="uk-text-justify"> В докладе будут рассмотрены базовые инструменты и принципы работы с многопоточностью в Java, зная которые вы можете как самостоятельно разрабатывать многопоточные приложения без лишних нервов, так и лучше понимать фреймворки с которыми вы работаете.</p>
+                <div class="lazyYT" data-youtube-id="ShT2bvMTXoQ">Видео доклада</div>
+            </div>
+        </div>
+        <hr class="uk-grid-divider">
+
+        <div class="uk-grid" data-uk-grid-margin="" id="first">
+            <div class="uk-width-1-1 e-article uk-text-large">
+                <h1>Первая встреча JUG.SEV</h1>
+                <p class="uk-text-justify">Первая встреча JUG.SEV прошла 15 ноября 2014 года, в центре технологического предпринимательства "Слобода" (ул. Героев Сталинграда 49 А).</p>
+                <h2>Доклады</h2>
+                <ul>
+                    <li><a href="#elizarov">Роман Елизаров. Миллионы котировок в секунду на чистой Java</a></li>
+                    <li><a href="#lespuh">Андрей Леспух. Scala - упрощая сложное</a></li>
+                    <li><a href="#chernyshev">Егор Чернышёв. Очень вкусный фрукт Guava</a></li>
+                    <li><a href="#chermnyh">Татьяна Черемных. Java-based test automation tools</a></li>
+                    <li><a href="#kamen">Степан Каменцев. Как сделать свою систему умнее или зачем нужна семантика</a></li>
+                    <li><a href="#voronets">Алексей Воронец. Потоковые и компонуемые приложения приложения с Play framework</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="uk-grid" data-uk-grid-margin="" id="elizarov">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/elizarov.jpg"/>
+            </div>
+
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>Миллионы котировок в секунду на чистой Java</h2>
+                <div class="uk-article-meta">Роман Елизаров из Devexperts</div>
+                <p class="uk-text-justify"> Доклад будет сконцентрирован на тех решениях и подходах, которые, исходя из реального опыта,
+                                позволяют достичь разумный компромисс между производительностью и сложностью, что во многом и
+                                обуславливает выбор платформы Java. Реальное сравнение с классическими поставщиками данных,
+                                имеющих десятилетнюю историю развития и поддержки своего программного обеспечения на языках
+                                низкого уровня, показывает что особенности Java не являются препятствием к созданию
+                                высокопроизводительных систем обработки данных, а скорее наоборот, позволяют догнать и обогнать
+                                конкурентов за счет наличия большего инструментария, увеличения продуктивности работы программистов,
+                                и упрощения отладки и поддержки.</p>
+                <div class="lazyYT" data-youtube-id="j3wFOmRmSeg">Видео доклада</div>
+            </div>
+        </div>
+        <hr class="uk-grid-divider">
+        <div class="uk-grid" data-uk-grid-margin="" id="lespuh">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/lespuh.png"/>
+            </div>
+
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>Scala - упрощая сложное</h2>
+                <div class="uk-article-meta">Андрей Леспух из Naumen</div>
+                <p class="uk-text-justify">Поговорим о проблемах утилизации многоядерных и многопроцессорных систем, которые являются серьезными вызовами для разработки ПО. Почти все разработчики сталкивались или сталкиваются с "гонками", "дедлоками", неопределенностью порядка выпонения и не имеют простых средств для решения данных проблем. В  докладе будет рассказано о соответствующих базовых технологиях, которые предоставляет Scala: параллельные коллекции, акторы и параллельные DSL. Будет возможность посмотреть можно ли легко и просто программировать в многопоточном окружении.</p>
+                <div class="lazyYT" data-youtube-id="EZxKO_rPkLA">Видео доклада</div>
+            </div>
+        </div>
+        <hr class="uk-grid-divider">
+        <div class="uk-grid" data-uk-grid-margin="" id="chernyshev">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/EgorChernyshev.png"/>
+            </div>
+
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>Очень вкусный фрукт Guava</h2>
+                <div class="uk-article-meta">Егор Чернышёв из Naumen</div>
+                <p class="uk-text-justify">Guava  - open-source библиотека, разработанная в основном инженерами компании Google, в которой есть множество полезных утилит для написания эффективного и красивого кода. В Guava решено множество типичных задач, которые часто возникают при работе с примитивами, строками, коллекциями, параллельными вычислениями, кэшированием данных и многим другим. В докладе поговорим о возможностях, которые предоставляет Guava, рассмотрим примеры использования утилит библиотеки.</p>
+                <div class="lazyYT" data-youtube-id="7YFH4VsW0_Q">Видео доклада</div>
+            </div>
+        </div>
+        <hr class="uk-grid-divider">
+
+        <div class="uk-grid" data-uk-grid-margin="" id="chermnyh">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/noname.png"/>
+            </div>
+
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>Java-based test automation tools</h2>
+                <div class="uk-article-meta">Татьяна Черемных из Naumen</div>
+                <p class="uk-text-justify">Рано или поздно в жизни команд разработки появляются вопросы: Нужно ли писать тесты на наше приложение? Если да, то какие? С чего начать? Поговорим о том, зачем нужны автотесты и как выбирать инструмент для их реализации. Обсудим проблемы, о которых нужно подумать при построении архитектуры тестирующей системы и типичные заблуждения, касающиеся автоматизации тестирования.</p>
+                <div class="lazyYT" data-youtube-id="oJobTQiMs2Q">Видео доклада</div>
+            </div>
+        </div>
+        <hr class="uk-grid-divider">
+
+        <div class="uk-grid" data-uk-grid-margin="" id="kamen">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/kamen.jpg"/>
+            </div>
+
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>Как сделать свою систему умнее или зачем нужна семантика</h2>
+                <div class="uk-article-meta">Степан Каменцев из Naumen</div>
+                <p class="uk-text-justify">Количество информации в мире стремительно возрастает, в результате на поиск и анализ информации у людей уходит до 40% рабочего времени.
+Мы создаем сервис, обеспечивающий автоматическое структурирование информации и эффективный поиск в ней.
+Для этого мы используем инструменты вычислительной семантики и методы обработки естественного языка.
+Доклад посвящен автоматизированным средствам анализа текстов: структурирование и извлечение информации, возникающие проблемы и способы их решения.</p>
+                <div class="lazyYT" data-youtube-id="t1c1BI70k1c">Видео доклада</div>
+            </div>
+        </div>
+        <hr class="uk-grid-divider">
+
+        <div class="uk-grid" data-uk-grid-margin="" id="voronets">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/voron.jpg"/>
+            </div>
+
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>Потоковые и компонуемые приложения приложения с Play framework</h2>
+                <div class="uk-article-meta">Алексей Воронец из Naumen</div>
+                <p class="uk-text-justify">Краткое введение в PlayFramework. Введение в то, как можно строить современные компонуемы web приложения с помощью Play, как эффективно стримить и рендерить страницы, значительно снижая время загрузки, используя BigPipe стиль с  Play Enumerators, как структурировать Play приложения, чтобы их было легко понимать, поддерживать и тестировать.</p>
+                <div class="lazyYT" data-youtube-id="5CovZdRn00g">Видео доклада</div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="e-footer">
+        <div class="uk-container uk-container-center uk-text-center">
+
+            <ul class="uk-subnav uk-subnav-line uk-flex-center">
+                <li><a href="https://twitter.com/jugsev" target="blank" class="uk-icon-button uk-icon-twitter"></a></li>
+                <li><a href="https://vk.com/jugsev" target="blank" class="uk-icon-button uk-icon-vk"></a></li>
+                <li><a href="https://www.facebook.com/pages/JUGSEV/340252682811007" target="blank" class="uk-icon-button uk-icon-facebook"></a></li>
+                <li><a href="http://instagram.com/jug.sev" target="blank" class="uk-icon-button uk-icon-instagram"></a></li>
+            </ul>
+
+            <div class="uk-panel">
+                <p>JUG.SEV
+                    <br>Сообщество java разработчиков Севастополя &copy; 2015</p>
+                    <a href="."><img src="img/logo.gif" width="90" height="30" title="jugsev.ru" alt="jugsev.ru"></a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-50423767-1', 'jugsev.ru');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+
+        </script>
+    </body>
+    </html>
