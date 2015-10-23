@@ -69,7 +69,88 @@
                 <ul>
                     <li><a href="#first">Первая встреча (15.11.2014)</a></li>
                     <li><a href="#second">Вторая встреча (14.03.2015)</a></li>
+                    <li><a href="#third">Третья встреча (26.09.2015)</a></li>
                 </ul>
+            </div>
+        </div>
+        <hr class="uk-grid-divider">
+        <div class="uk-grid" data-uk-grid-margin="" id="third">
+            <div class="uk-width-1-1 e-article uk-text-large">
+                <h1>Третья встреча</h1>
+                <p class="uk-text-justify">Третья встреча JUG.SEV прошла 26 сентября 2015, в отеле ATRIUM - King's Way (пр. Героев Сталинграда, 47).</p>
+                <h2>Доклады</h2>
+                <ul>
+                    <li><a href="#muravev">Павел Муравьев. JMS как инструмент для масштабирования и построения распределенных систем</a></li>
+                    <li><a href="#chuiko">Дмитрий Чуйко. CompletableFuture уже здесь</a></li>
+                    <li><a href="#titov">Егор Титов. Документирование RESTful API при помощи Swagger на основе Jersey</a></li>
+                    <li><a href="#kirpichenkov">Денис Кирпиченков. Анализ производительности Java-приложения</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-grid" data-uk-grid-margin="" id="muravev">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/muravev.jpg"/>
+            </div>
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>JMS как инструмент для масштабирования и построения распределенных систем</h2>
+                <div class="uk-article-meta">Павел Муравьев из Naumen</div>
+                <p class="uk-text-justify">Павел Муравьев - ведущий инженер-программист компании NAUMEN, работает в отделе разработки продукта Service Desk. Специализируется на системах мониторинга, участвовал в разработке проектов распределенных асинхронных систем на базе JMS.</p>
+
+                <p class="uk-text-justify">В современном мире технологии и правила жизни постоянно изменяются. Как сложному программному обеспечению успевать адаптироваться к таким изменениям? Как интегрировать новый компонент, новую технологию, увеличить производительность системы, не нарушив её работы? Самый простой способ – перестать воспринимать систему как монолитный блок, состоящий из однородных элементов, а вместо этого создать прослойку, которая позволит компонентам общаться, несмотря на их различия. JMS – один из инструментов для реализации такого подхода.</p>
+                <p class="uk-text-justify">Подробнее о JMS и как превратить сеть в большой компьютер – в докладе.</p>
+                <div class="lazyYT" data-youtube-id="Lm-TbS7JwnY">Видео доклада</div>
+            </div>
+        </div>
+        <div class="uk-grid" data-uk-grid-margin="" id="chuiko">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/chuiko.jpg"/>
+            </div>
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>CompletableFuture уже здесь</h2>
+                <div class="uk-article-meta">Дмитрий Чуйко из Oracle</div>
+
+                <p class="uk-text-justify">Стандартная библиотека должна помогать выстраивать любые параллельные вычисления, да ещё бы так, чтобы хорошо использовать все ядра. В Java уже довольно давно существуют Thread, Future и ExecutorSevice. Однако часто использование потоков "вручную" порождает типичные ошибки и сложности. Бывает трудно добиться максимальной производительности, и не всегда получается вписаться в общий стиль обработки данных. Java 8 предлагает решения. Например, для модели pull удобнее использовать стримы (j.u.Streams), а для continuation - CompletableFuture. Посмотрим, как просто избавиться от блокирующих вызовов и ада коллбэков. Мы коснемся следующих тем:
+                <ul>
+                    <li>Переход от блокирующегося исполнения на основе Future к подходу без блокировок на основе CompletableFuture.</li>
+                    <li>Разбор API.</li>
+                    <li>Накладные расходы.</li>
+                    <li>Простое руководство для многоуровневых систем (на примере веб-сервера).</li>
+                    <li>Что внутри и что дальше.</li>
+                </ul>
+                </p>
+                <div class="lazyYT" data-youtube-id="ewTpoXfIf-w">Видео доклада</div>
+            </div>
+        </div>
+        <div class="uk-grid" data-uk-grid-margin="" id="titov">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/titov.jpg"/>
+            </div>
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>Документирование RESTful API при помощи Swagger на основе Jersey</h2>
+                <div class="uk-article-meta">Егор Титов из Naumen</div>
+
+                <p class="uk-text-justify">Сейчас довольно популярна схема приложения, когда оно делится на две части: клиентскую и серверную. Обе части приложения могут разрабатывать независимые команды. В таком случае зачастую недостаточно самодокументируемого кода, необходима документация, описывающая "точку соприкосновения" команд. В этом может помочь Swagger - интерактивная документация вашего RESTful API и простой вариант создания SDK. Jersey  - это реализация RESTful API серверной части. Расскажу и покажу, как пользоваться этими средствами и попробую продемонстрировать генерацию SDK.
+                </p>
+                <div class="lazyYT" data-youtube-id="8tcPbXh9NIU">Видео доклада</div>
+            </div>
+        </div>
+        <div class="uk-grid" data-uk-grid-margin="" id="kirpichenkov">
+            <div class="uk-width-medium-1-4">
+                <img class="uk-thumbnail" width="660" height="400" s src="img/kirpichenkov.png"/>
+            </div>
+            <div class="uk-width-medium-3-4 e-article" >
+                <h2>Анализ производительности Java-приложения</h2>
+                <div class="uk-article-meta">Денис Кирпиченков из Naumen</div>
+                <p class="uk-text-justify">Денис Кирпиченков - performance инженер направления Service Desk в NAUMEN.</p>
+
+                <p class="uk-text-justify">Говорят, все довольные пользователи java-приложений счастливы одинаково, а все недовольные - несчастливы каждый по-своему. Но, что делать с одной, вероятно, общей проблемой пользователей - "После установки java-приложения стал жутко тормозить сервер"? О том, что делать с такими вопросами пользователей, на примере Web-приложения на Java, и будет посвящен данный доклад. Из доклада вы узнаете:
+                <ul>
+                 <li>с чего лучше начинать работу с производительностью (java) приложения;</li>
+                 <li>что можно сделать для упрощения анализа;</li>
+                 <li>какие есть стандартные и нестандартные инструменты и подходы для решения подобных задач.</li>
+                </ul>
+                 </p>
+                 <div class="lazyYT" data-youtube-id="A8avEgemHzk">Видео доклада</div>
             </div>
         </div>
         <hr class="uk-grid-divider">
